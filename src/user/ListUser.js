@@ -153,7 +153,6 @@ function ListUser() {
                                                 <td class="px-6 py-2 text-sm whitespace-nowrap">{row.name}</td>
                                                 <td class="px-6 py-2 text-sm whitespace-nowrap">{row.email}</td>
                                                 <td class="px-6 py-2 text-sm whitespace-nowrap">
-                                                    <Link class="pr-[2px] py-2"><i class="fa-solid fa-eye text-base"></i></Link>
                                                     <Link to={`/user/Edit/${row.id}`} class="pr-[2px] py-2"><i class="fa-solid fa-pen-to-square text-base"></i></Link>
                                                     <button className="pr-[2px] py-2" onClick={()=>deleteuser(row.id)}><i className="fa-regular fa-trash-can text-base"></i></button>
                                                 </td>
