@@ -39,7 +39,7 @@ function Header() {
         <div class="container mx-auto">
             <div class="flex items-center justify-between relative">
                 <div class="px-4 lg:px-7">
-                    <Link href="" class="text-sm block px-3 py-3">Dewa</Link>
+                    <div class="text-sm block px-3 py-3">{user.name}</div>
                 </div>
                 <div class="flex items-center px-4">
                     <nav class="w-full p-3">

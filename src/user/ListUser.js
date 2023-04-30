@@ -113,20 +113,20 @@ function ListUser() {
                             <div class="md:w-1/2">
                                 <div class="flex flex-col mb-4">
                                     <label class="text-sm mb-2">Name</label>
-                                    <input type="text" class="px-2 py-1 text-sm rounded-md border-[1px]" placeholder="Enter Name here..." value={name} onChange={(event)=>{setName(event.target.value)}} required></input>    
+                                    <input type="text" class="px-2 py-1 text-sm rounded-md border-[1px]" placeholder="Enter Name here..." value={name} onChange={(event)=>{setName(event.target.value)}} required maxLength="100"></input>    
                                 </div>
                                 <div class="flex flex-col mb-4">
                                     <label class="text-sm mb-2">Email</label>
-                                    <input type="text" class="px-2 py-1 text-sm rounded-md border-[1px]" placeholder="Enter Email here..." value={email} onChange={(event)=>{setEmail(event.target.value)}} required></input>    
+                                    <input type="text" class="px-2 py-1 text-sm rounded-md border-[1px]" placeholder="Enter Email here..." value={email} onChange={(event)=>{setEmail(event.target.value)}} required maxLength="100"></input>    
                                 </div>
                             </div>
                             <div class="md:w-1/2">
                                 <div class="flex flex-col mb-4">    
                                     <label class="text-sm mb-2">Password</label>
-                                    <input type="text" class="px-2 py-1 text-sm rounded-md border-[1px]" placeholder="Enter Password here..." value={password} onChange={(event)=>{setPassword(event.target.value)}} required></input>    
+                                    <input type="text" class="px-2 py-1 text-sm rounded-md border-[1px]" placeholder="Enter Password here..." value={password} onChange={(event)=>{setPassword(event.target.value)}} required maxLength="50"></input>    
                                 </div>
                                 <label class="text-sm mb-3">Save</label>
-                                <button type="submit" class="md:block px-3 py-2 text-sm bg-green-600  rounded-full text-white hover:bg-white hover:text-green-600 hover:border-2 hover:border-green-600"> <i class="fa fa-add text-xs"></i> Add Data User</button>
+                                <button type="submit" class="block px-3 py-2 text-sm bg-green-600  rounded-full text-white hover:bg-white hover:text-green-600 hover:border-2 hover:border-green-600"> <i class="fa fa-add text-xs"></i> Add Data User</button>
                             </div>
                         </div>
                     </form>

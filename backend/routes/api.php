@@ -27,5 +27,6 @@ Route::middleware('auth:api')->get('/datauser', function (Request $request) {
 
 Route::get('/user', [UserController::class, 'index']);
 Route::post('/user/store', [UserController::class, 'store']);
+Route::get('/user/show/{id}', [UserController::class, 'show']);
 Route::patch('/user/update/{id}', [UserController::class, 'update']);
 Route::delete('/user/destroy/{id}', [UserController::class, 'destroy']);
